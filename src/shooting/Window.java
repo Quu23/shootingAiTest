@@ -1,6 +1,5 @@
 package shooting;
 
-
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -12,6 +11,8 @@ import javafx.stage.Stage;
 public class Window extends Application{
 
     GraphicsContext g ;
+    static Player player;
+    static Enemy enemy;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -28,7 +29,9 @@ public class Window extends Application{
         stage.setResizable(false);
         stage.show();
     }
-    public static void main(String[] args) {
+    public static void run(String[] args,Player p,Enemy e){
+        player=p;
+        enemy =e;
         launch(args);
     }
 }
