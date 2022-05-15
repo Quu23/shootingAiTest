@@ -1,8 +1,6 @@
 package shooting;
 
-public class Bullet {
-    private int x;
-    private int y;
+public class Bullet extends Objects{
     Bullet(int x,int y){
         this.setX(x);
         this.setY(y);
